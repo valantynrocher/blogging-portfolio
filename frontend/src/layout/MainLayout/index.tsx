@@ -16,7 +16,7 @@ const MainLayout = (props: MainLayoutProps) => {
       <Header />
       <Container
         component="main"
-        classes={{ maxWidthLg: classes.container }}
+        classes={{ root: classes.container }}
         disableGutters
       >
         {props.children}

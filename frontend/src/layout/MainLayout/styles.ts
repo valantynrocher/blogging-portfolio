@@ -12,10 +12,14 @@ export const classes = {
 export const StyledMainLayout = styled("div")(({ theme }) => ({
   position: "relative",
   minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
 
   [`& .${classes.container}`]: {
     maxWidth: "72rem",
     padding: theme.spacing(3),
+    flex: "1 1 auto",
+    overflowY: "auto",
   },
 
   [`& .${classes.floatingActions}`]: {
