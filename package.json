@@ -4,12 +4,12 @@
   "description": "My personnal website, both portfolio and personnal blog space.",
   "main": "index.js",
   "scripts": {
-    "backend-develop": "cd backend && yarn develop",
-    "backend-start": "cd backend && yarn start",
-    "backend-build": "cd backend && yarn build",
-    "frontend-build": "cd frontend && yarn build",
-    "frontend-develop": "cd frontend && yarn develop",
-    "frontend-serve": "cd frontend && yarn serve",
+    "backend-develop": "yarn --cwd backend develop",
+    "backend-start": "yarn --cwd backend start",
+    "backend-build": "yarn --cwd backend build",
+    "frontend-build": "yarn --cwd frontend build",
+    "frontend-develop": "yarn --cwd frontend develop",
+    "frontend-serve": "yarn --cwd frontend serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Valentin Rocher",
