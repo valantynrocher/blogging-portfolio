@@ -3,9 +3,7 @@ import styled from "@mui/material/styles/styled"
 
 const PREFIX = "Header"
 
-export const classes = {
-  // mobile: `${PREFIX}-mobile`,
-}
+export const classes = {}
 
 export const StyledAppBar = styled(AppBar)(({ theme }) => ({
   alignItems: "center",

@@ -11,7 +11,7 @@ import { classes, StyledSwipeableDrawer, StyledToolbar } from "./styles"
 const MobileToolbar = (props: MobileToolbarProps) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const handleOpen = (event: any) => {
+  const handleOpen = () => {
     setMenuOpen(true)
   }
   const handleClose = () => {
@@ -53,7 +53,7 @@ const MobileToolbar = (props: MobileToolbarProps) => {
           className={classes.nav}
         >
           {menuItems.map((props) => (
-            <MobileNavItem key={props.text} {...props} />
+            <MobileNavItem key={props.text} {...props} onClose={handleClose} />
           ))}
         </List>
       </StyledSwipeableDrawer>

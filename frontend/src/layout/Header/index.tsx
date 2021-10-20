@@ -11,12 +11,12 @@ export const menuItems: MenuItemProps[] = [
   {
     text: "Accueil",
     Icon: FaHome,
-    to: "",
+    to: "/",
   },
   {
     text: "A propos",
     Icon: FaRoute,
-    to: "",
+    to: "/",
   },
   {
     text: "Explorer",
@@ -26,7 +26,7 @@ export const menuItems: MenuItemProps[] = [
   {
     text: "Me contacter",
     Icon: FaComments,
-    to: "",
+    to: "/",
   },
 ]
 

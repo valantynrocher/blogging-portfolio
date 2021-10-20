@@ -8,12 +8,11 @@ export const classes = {
   popoverPaper: `${PREFIX}-popoverPaper`,
   arrowIcon: `${PREFIX}-arrowIcon`,
   arrowIconUp: `${PREFIX}-arrowIconUp`,
+  color: `${PREFIX}-color`,
 }
 
 export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
-  // [`& .${classes.arrowIconUp}`]: {
-  //   transform: "rotate(180deg)",
-  // },
+  color: theme.palette.primary.light,
 
   [`& .${classes.arrowIcon}`]: {
     transition: "all .5s",
@@ -22,8 +21,9 @@ export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
   [`& .${classes.arrowIconUp}`]: {
     transform: "rotate(180deg)",
   },
-  arrowIcon: `${PREFIX}-arrowIcon`,
-  arrowIconUp: `${PREFIX}-arrowIconUp`,
+  [`& .${classes.color}`]: {
+    color: theme.palette.primary.light,
+  },
 }))
 
 export const StyledCollapse = styled(Collapse)(({ theme }) => ({

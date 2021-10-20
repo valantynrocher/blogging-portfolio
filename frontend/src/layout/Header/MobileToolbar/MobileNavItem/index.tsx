@@ -5,10 +5,15 @@ import React, { useState } from "react"
 import { FaCaretDown } from "react-icons/fa"
 import { handleNavigate } from "../../../../utils"
 import { MenuItemProps } from "../../props"
+import { classes as headerClasses } from "../../styles"
 import { classes, StyledCollapse, StyledListItemButton } from "./styles"
 
-const MobileNavItem = (props: MenuItemProps) => {
-  const { Icon, text, to, SubmenuComponent } = props
+const MobileNavItem = (
+  props: MenuItemProps & {
+    onClose: () => void
+  }
+) => {
+  const { Icon, text, to, SubmenuComponent, onClose } = props
   const [menuOpen, setMenuOpen] = useState(false)
   const hasMenu = Boolean(SubmenuComponent)
 
@@ -16,13 +21,14 @@ const MobileNavItem = (props: MenuItemProps) => {
     if (hasMenu) setMenuOpen(!menuOpen)
     else if (to) {
       handleNavigate(to)
+      onClose()
     }
   }
 
   return (
     <React.Fragment>
       <StyledListItemButton onClick={handleClick}>
-        <ListItemIcon>
+        <ListItemIcon className={classes.color}>
           <Icon />
         </ListItemIcon>
         <ListItemText primary={text} />
