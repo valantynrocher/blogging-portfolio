@@ -1,0 +1,17 @@
+{
+  "name": "blogging-portfolio",
+  "version": "1.0.0",
+  "description": "My personnal website, both portfolio and personnal blog space.",
+  "main": "index.js",
+  "scripts": {
+    "backend-develop": "cd backend && yarn develop",
+    "backend-start": "cd backend && yarn start",
+    "backend-build": "cd backend && yarn build",
+    "frontend-build": "cd frontend && yarn build",
+    "frontend-develop": "cd frontend && yarn develop",
+    "frontend-serve": "cd frontend && yarn serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentin Rocher",
+  "license": "ISC"
+}
