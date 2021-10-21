@@ -26,6 +26,7 @@ export const StyledMainLayout = styled("div")(({ theme }) => ({
     position: "fixed",
     top: "50%",
     right: 0,
+    zIndex: 100,
     [`& .${classes.fab}`]: {
       borderTopRightRadius: 0,
     },
