@@ -10,7 +10,7 @@ import { MainLayoutProps } from "./props"
 import { classes, StyledMainLayout } from "./styles"
 
 const MainLayout = (props: MainLayoutProps) => {
-  const { mode, toggleMode, isMobile } = useContext(LayoutContext)
+  const { isMobile } = useContext(LayoutContext)
   return (
     <StyledMainLayout id="top">
       <Header />
