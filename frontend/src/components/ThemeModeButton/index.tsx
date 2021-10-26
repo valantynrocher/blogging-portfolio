@@ -1,12 +1,12 @@
-import DarkModeIcon from "@mui/icons-material/DarkMode"
-import LightModeIcon from "@mui/icons-material/LightMode"
-import React, { useContext } from "react"
-import LayoutContext from "../../layout/Context/LayoutContext"
-import { ThemeModeButtonProps } from "./props"
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import React, { useContext } from "react";
+import LayoutContext from "../../layout/Context/LayoutContext";
+import { ThemeModeButtonProps } from "./props";
 
 const ThemeModeButton = (props: ThemeModeButtonProps) => {
-  const { Wrapper, className, ButtonProps } = props
-  const { mode, toggleMode } = useContext(LayoutContext)
+  const { Wrapper, className, ButtonProps } = props;
+  const { mode, toggleMode } = useContext(LayoutContext);
   return (
     <Wrapper
       onClick={() => toggleMode()}
@@ -15,9 +15,9 @@ const ThemeModeButton = (props: ThemeModeButtonProps) => {
       className={className}
       {...ButtonProps}
     >
-      {mode === "dark" ? <DarkModeIcon /> : <LightModeIcon />}
+      {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
     </Wrapper>
-  )
-}
+  );
+};
 
-export default ThemeModeButton
+export default ThemeModeButton;
