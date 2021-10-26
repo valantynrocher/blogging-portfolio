@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "@mui/material/styles/styled";
 import Grid from "@mui/material/Grid";
+import styled from "@mui/material/styles/styled";
+import React from "react";
+import { SiYourtraveldottv } from "react-icons/si";
 import PostCard from "../PostCard";
 
 interface PostsGridProps {}
@@ -19,12 +20,42 @@ export const StyledGrid = styled(Grid)(({ theme }) => ({
 const PostsGrid = (props: PostsGridProps) => {
   return (
     <StyledGrid container rowSpacing={1} columnSpacing={{ xs: 3 }}>
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
+      <PostCard
+        image="/images/image1.jpg"
+        Icon={SiYourtraveldottv}
+        title="Titre cliquable"
+        date="Date"
+      />
+      <PostCard
+        image="/images/image1.jpg"
+        Icon={SiYourtraveldottv}
+        title="Titre cliquable"
+        date="Date"
+      />
+      <PostCard
+        image="/images/image1.jpg"
+        Icon={SiYourtraveldottv}
+        title="Titre cliquable"
+        date="Date"
+      />
+      <PostCard
+        image="/images/image1.jpg"
+        Icon={SiYourtraveldottv}
+        title="Titre cliquable"
+        date="Date"
+      />
+      <PostCard
+        image="/images/image1.jpg"
+        Icon={SiYourtraveldottv}
+        title="Titre cliquable"
+        date="Date"
+      />
+      <PostCard
+        image="/images/image1.jpg"
+        Icon={SiYourtraveldottv}
+        title="Titre cliquable"
+        date="Date"
+      />
     </StyledGrid>
   );
 };
